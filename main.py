@@ -4,7 +4,6 @@ import fnmatch
 import shutil
 
 folder_path = r"C:\Users\Toshiba\Downloads\Compressed\whisper-main_repo"  # Replace with the desired path
-output_dir = r"G:\My Drive\Desarrollo de software\Repos a JSON\repos_json\output"  # Replace with your desired output directory
 
 limit = 1000  # Limit the number of lines to read per file
 
@@ -116,6 +115,8 @@ def main(folder_path, output_dir):
         print(f"Truncated files (limited to {limit} lines):")
         for file in truncated_files:
             print(f" - {file}")
+
+output_dir = r"G:\My Drive\Desarrollo de software\Repos a JSON\repos_json\output"  # Replace with your desired output directory
 
 # Crear output_dir si no existe
 if not os.path.exists(output_dir):
